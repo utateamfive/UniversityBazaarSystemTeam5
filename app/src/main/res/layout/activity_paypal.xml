@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Paypal"
+    android:background="#36598F">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Paypaltext"
+        android:text="Enter PayPal Email"
+        android:textColor="@color/white"
+        android:layout_marginVertical="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PaypalPassText"
+        android:text="Enter PayPal Password"
+        android:textColor="@color/white"
+        android:layout_below="@id/Paypaltext"
+        android:layout_marginVertical="55dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Paypaltext"
+        android:id="@+id/Paypal"
+        android:hint="Enter Paypal Email"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PaypalPass"
+        android:hint="Enter Paypal Password"
+        android:layout_toRightOf="@id/PaypalPassText"
+        android:layout_below="@id/Paypal"
+        android:layout_marginVertical="50dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Payment"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/SubmitPaymentPP"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Failed"
+        android:id="@+id/failPay"
+        android:textColor="@color/white"
+        android:layout_below="@id/SubmitPaymentPP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        />
+
+
+</RelativeLayout>

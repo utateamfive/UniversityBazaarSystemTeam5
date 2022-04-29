@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsActivity">
+
+    <Button
+        android:id="@+id/create_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#36598F"
+        android:text="Create Topic"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_topic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Current Topics"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#36598F" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listtopics"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#D5F8FD"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#36598F"
+        android:text="Search" />
+
+
+</RelativeLayout>

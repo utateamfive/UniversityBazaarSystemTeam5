@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "658424232225",
+    "project_id": "university-bazaar-system-10f63",
+    "storage_bucket": "university-bazaar-system-10f63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658424232225:android:d8282ebd1615e4e55ca660",
+        "android_client_info": {
+          "package_name": "com.teamfive.universitybazaarsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658424232225-70l7u8p5ur986d65bmgfgvlps9jv8t1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiN3ZrQwf9UC5yyjCC8gZJ7jSZ7oL_ppk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658424232225-70l7u8p5ur986d65bmgfgvlps9jv8t1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

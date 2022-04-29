@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view_delete_topic">
+
+    <EditText
+        android:id="@+id/blowup_title"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:background="#7AA6DA"
+        android:gravity="center"
+        android:text="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/blowup_author"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:background="#7AA6DA"
+        android:gravity="center"
+        android:text="Author"
+        app:layout_constraintBottom_toTopOf="@+id/blowup_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blowup_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/blowup_category"
+        android:layout_width="171dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="24dp"
+        android:background="#7AA6DA"
+        android:gravity="center"
+        android:text="Category"
+        app:layout_constraintBottom_toTopOf="@+id/blowup_bodytext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/blowup_bodytext"
+        android:layout_width="324dp"
+        android:layout_height="228dp"
+        android:layout_marginBottom="252dp"
+        android:background="#7AA6DA"
+        android:gravity="center"
+        android:text="Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="44dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/editbutton"
+        android:layout_width="112dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="44dp"
+        android:text="Submit Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deletebutton"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/view_topic"
+        android:layout_width="413dp"
+        android:layout_height="42dp"
+        android:background="#3D5AFE"
+        android:backgroundTint="#ADC4DF"
+        android:gravity="center"
+        android:text="Viewing Topic"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/messagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blowup_bodytext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

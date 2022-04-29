@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addLoan"
+    android:background="#36598F">
+
+    <TextView
+        android:id="@+id/NameofItemLN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:text="Name of Item for Loan"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Itemtimep"
+        android:text = "Item to exchange for"
+        android:textColor="@color/white"
+        android:layout_below="@id/NameofItemLN" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NameofLoaner"
+        android:text="Name of Item Loaner"
+        android:layout_marginVertical="25dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/Itemtimep"/>
+
+    <EditText
+        android:id="@+id/ItemNameLN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/NameofItemLN"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Enter Name of item"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Itemtime"
+        android:inputType="number"
+        android:layout_toRightOf="@id/Itemtimep"
+        android:layout_below="@id/ItemNameLN"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Enter Item Loan Time"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ItemLoaner"
+        android:layout_toRightOf="@id/NameofLoaner"
+        android:layout_below="@id/Itemtime"
+        android:layout_marginHorizontal="34dp"
+        android:hint="Enter Username" />
+
+    <Button
+        android:id="@+id/LoanSubmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ItemLoaner"
+        android:text="Submit Item" />
+
+</RelativeLayout>

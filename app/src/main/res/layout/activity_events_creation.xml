@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsActivity">
+
+    <ImageView
+        android:id="@+id/events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/eventcreation" />
+
+    <TextView
+        android:id="@+id/clubnametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club Name:"
+        android:layout_below="@+id/events"
+        android:textAllCaps="true"
+        android:textColor="#36598F"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/clubnameinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here..."
+        android:singleLine="true"
+        android:layout_below="@+id/clubnametext" />
+
+    <TextView
+        android:id="@+id/eventnametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name:"
+        android:layout_below="@+id/clubnameinput"
+        android:textAllCaps="true"
+        android:textColor="#36598F"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/eventnameinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here..."
+        android:singleLine="true"
+        android:layout_below="@+id/eventnametext" />
+
+    <TextView
+        android:id="@+id/eventdatetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Date(DD-MM-YYYY):"
+        android:layout_below="@+id/eventnameinput"
+        android:textAllCaps="true"
+        android:textColor="#36598F"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/eventdateinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here..."
+        android:singleLine="true"
+        android:layout_below="@+id/eventdatetext" />
+
+    <TextView
+        android:id="@+id/eventtimetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Time(HHMM - Military):"
+        android:layout_below="@+id/eventdateinput"
+        android:textAllCaps="true"
+        android:textColor="#36598F"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/eventtimeinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here..."
+        android:singleLine="true"
+        android:layout_below="@+id/eventtimetext" />
+
+    <TextView
+        android:id="@+id/eventcoordinatortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Coordinator:"
+        android:layout_below="@+id/eventtimeinput"
+        android:textAllCaps="true"
+        android:textColor="#36598F"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/eventcoordinatorinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here..."
+        android:singleLine="true"
+        android:layout_below="@+id/eventcoordinatortext" />
+
+    <TextView
+        android:id="@+id/eventdescriptiontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Description:"
+        android:layout_below="@+id/eventcoordinatorinput"
+        android:textAllCaps="true"
+        android:textColor="#36598F"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/eventdescriptioninput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here..."
+        android:singleLine="true"
+        android:layout_below="@+id/eventdescriptiontext" />
+
+    <TextView
+        android:id="@+id/eventmemberstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Members(Coordinator):"
+        android:layout_below="@+id/eventdescriptioninput"
+        android:textAllCaps="true"
+        android:textColor="#36598F"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/eventmembersinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here..."
+        android:singleLine="true"
+        android:layout_below="@+id/eventmemberstext" />
+
+    <Button
+        android:id="@+id/submiteventbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#36598F"
+        android:layout_centerInParent="true"
+        android:text="Create New Event"
+        android:layout_below="@+id/eventmembersinput" />
+
+</RelativeLayout>

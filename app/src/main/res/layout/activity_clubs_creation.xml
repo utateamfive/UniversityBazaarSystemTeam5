@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".EventsActivity">
+
+            <ImageView
+                android:id="@+id/clubcreation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/clubcreation" />
+
+            <TextView
+                android:id="@+id/clubnametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clubcreation"
+                android:text="Club Name:"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/clubnameinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter here..."
+                android:singleLine="true"
+                android:layout_below="@+id/clubnametext" />
+
+            <TextView
+                android:id="@+id/clubtypetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clubnameinput"
+                android:text="Club Type:"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/clubtypeinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter here..."
+                android:singleLine="true"
+                android:layout_below="@+id/clubtypetext" />
+
+            <TextView
+                android:id="@+id/clubfoundertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clubtypeinput"
+                android:text="Club Founder:"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/clubfounderinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter here..."
+                android:singleLine="true"
+                android:layout_below="@+id/clubfoundertext" />
+
+            <TextView
+                android:id="@+id/clubdescriptiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clubfounderinput"
+                android:text="Club Description:"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/clubdescriptioninput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter here..."
+                android:singleLine="true"
+                android:layout_below="@+id/clubdescriptiontext" />
+
+            <TextView
+                android:id="@+id/clublocationtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clubdescriptioninput"
+                android:text="Club Location:"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/clublocationinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter here..."
+                android:singleLine="true"
+                android:layout_below="@+id/clublocationtext" />
+
+            <TextView
+                android:id="@+id/clubmemberstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clublocationinput"
+                android:text="Club Members(Initial Founder):"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/clubmembersinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter here..."
+                android:singleLine="true"
+                android:layout_below="@+id/clubmemberstext" />
+
+            <Button
+                android:id="@+id/submitclubbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clubmembersinput"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#36598F"
+                android:text="Create New Club" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

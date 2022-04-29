@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36598F"
+    tools:context=".SalesMain">
+
+    <Button
+        android:id="@+id/Sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="goSales"
+        android:text="Enter Sales" />
+
+    <Button
+        android:id="@+id/Loans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below='@id/Sales'
+        android:layout_marginVertical="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="goLoans"
+        android:text="Enter Loans" />
+
+    <Button
+        android:id="@+id/Exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below='@id/Loans'
+        android:layout_marginVertical="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="goExchange"
+        android:text="Enter Exchange" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/Exchange"
+
+        android:layout_marginVertical="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="goHistory"
+        android:text="Enter Item History" />
+</RelativeLayout>

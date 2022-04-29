@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditCard"
+    android:background="#36598F">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CCnumberText"
+        android:text="Enter Credit Card Number"
+        android:textColor="@color/white"
+        android:layout_marginVertical="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CCccvText"
+        android:text="Enter Credit Card CCV"
+        android:layout_below="@id/CCnumberText"
+        android:layout_marginVertical="50dp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Credit Card Experation Date"
+        android:textColor="@color/white"
+        android:layout_marginVertical="50dp"
+        android:layout_below="@id/CCccvText"
+        android:id="@+id/CCdateText"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/CCnumberText"
+        android:id="@+id/CCnumber"
+        android:hint="Enter Credit Card number"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/CCccvText"
+        android:inputType="number"
+        android:id="@+id/CCccv"
+        android:hint="Credit Card CCV"
+        android:layout_below="@id/CCnumber"
+        android:layout_marginVertical="50dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/CCdateText"
+        android:id="@+id/CCdate"
+        android:hint="Enter Experation Date"
+        android:layout_marginVertical="25dp"
+        android:inputType="number"
+        android:layout_below="@id/CCccv"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Payment"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/SubmitPaymentCC"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Failed Try again"
+        android:layout_below="@id/SubmitPaymentCC"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/payFail"
+        />
+</RelativeLayout>

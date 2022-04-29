@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".EventsActivity">
+
+            <ImageView
+                android:id="@+id/CommunicationsPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/communicationshomepage" />
+
+            <TextView
+                android:id="@+id/CommunicationsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CommunicationsPicture"
+                android:text="Welcome to the communications page. Here you can view and send messages to fellow students in the application."
+                android:textAlignment="center"
+                android:paddingBottom="18dp"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/CommunicationsBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CommunicationsPicture"
+                app:srcCompat="@drawable/backgroundbanner" />
+
+            <TextView
+                android:id="@+id/SendMessageDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CommunicationsDescription"
+                android:paddingBottom="8dp"
+                android:text="Here you can send a message to the requested user within the application."
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/MessageNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SendMessageDescription"
+                android:text="Recipient Phone Number:"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/MessageNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MessageNumberText"
+                android:hint="Enter Here..."
+                android:singleLine="true" />
+            <TextView
+                android:id="@+id/MessageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MessageNumberInput"
+                android:text="Sender Message:"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/MessageInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MessageText"
+                android:hint="Enter Here..."
+                android:singleLine="true" />
+            <Button
+                android:id="@+id/SendMessageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MessageInput"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#36598F"
+                android:text="Send Message" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

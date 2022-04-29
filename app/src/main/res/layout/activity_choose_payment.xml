@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36598F"
+    tools:context=".choosePayment">
+
+    <Button
+        android:id="@+id/Cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="125dp"
+        android:layout_marginVertical="100dp"
+        android:onClick="goCash"
+        android:text="Proceed to Cash" />
+
+    <Button
+        android:id="@+id/CreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below='@id/Cash'
+        android:layout_marginHorizontal="125dp"
+        android:layout_marginVertical="75dp"
+        android:onClick="goCard"
+        android:text="Proceed to Card" />
+
+    <Button
+        android:id="@+id/Paypal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below='@id/CreditCard'
+        android:layout_marginHorizontal="125dp"
+        android:layout_marginVertical="75dp"
+        android:onClick="goPaypal"
+        android:text="Proceed to Paypal" />
+</RelativeLayout>

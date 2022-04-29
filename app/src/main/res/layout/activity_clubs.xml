@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".EventsActivity">
+
+            <ImageView
+                android:id="@+id/clubs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/utaclubs" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:onClick="goToClubsCreationPage"
+                app:srcCompat="@drawable/actionbutton" />
+
+            <TextView
+                android:id="@+id/joinclubtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clubs"
+                android:text="Welcome to the clubs page. Please enter the name below of the club you would like to join as well as your name."
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/joinclubinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/joinclubtext"
+                android:hint="Enter Club Here..."
+                android:singleLine="true" />
+            <EditText
+                android:id="@+id/joinnameinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/joinclubinput"
+                android:hint="Enter Name Here..."
+                android:singleLine="true" />
+            <Button
+                android:id="@+id/joinclubbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/joinnameinput"
+                android:onClick="JoinClub"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#36598F"
+                android:text="Join Club" />
+
+            <TextView
+                android:id="@+id/populateclubstext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/joinclubbutton"
+                android:text="Below you can populate all available clubs."
+                android:layout_marginTop="100px"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#36598F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/populateclubsbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/populateclubstext"
+                android:onClick="PopulateActiveClubs"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#36598F"
+                android:text="Populate Clubs" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/clubsview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/populateclubsbutton" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_cart_rv.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_clubs.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_clubs_creation.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_clubs_events_homepage.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_communications.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_create_topic.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_credit_card.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_events.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_events_creation.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_exchange.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_exchangerv.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_home.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_loan.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_login.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_main.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_register.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_sales.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_sales_main.xml" value="0.1038500506585613" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_search.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_topic_exchange.xml" value="0.1038500506585613" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/activity_view_delete_topic.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/searchcard.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/layout/topicinfo.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Thost/AndroidStudioProjects/UniversityBazaarSystem/app/src/main/res/menu/menu.xml" value="0.4041666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
