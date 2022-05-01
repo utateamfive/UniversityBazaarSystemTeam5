@@ -32,26 +32,18 @@ public class Communications extends AppCompatActivity {
 
         sendBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                sendSMSMessage();
+                phoneNo = txtphoneNo.getText().toString();
+                message = txtMessage.getText().toString();
+                try {
+                    SmsManager smsManager=SmsManager.getDefault();
+                    smsManager.sendTextMessage(phoneNo,null,message,null,null);
+                    Toast.makeText(getApplicationContext(),"Message Sent",Toast.LENGTH_LONG).show();
+                }catch (Exception e)
+                {
+                    Toast.makeText(getApplicationContext(),"Some fields are Empty",Toast.LENGTH_LONG).show();
+                }
             }
         });
-    }
-
-    protected void sendSMSMessage() {
-        phoneNo = txtphoneNo.getText().toString();
-        message = txtMessage.getText().toString();
-
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.SEND_SMS)
-                != PackageManager.PERMISSION_GRANTED) {
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.SEND_SMS)) {
-            } else {
-                ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.SEND_SMS},
-                        MY_PERMISSIONS_REQUEST_SEND_SMS);
-            }
-        }
     }
 
     @Override
